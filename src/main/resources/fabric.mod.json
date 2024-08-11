@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "templatemod",
+	"version": "${version}",
+	"name": "Template Mod",
+	"description": "This is a GitHub template to create a new project for a Fabric mod in Minecraft 1.21.",
+	"authors": [
+		"Pixfri"
+	],
+	"contact": {
+		"homepage": "https://pixfri.github.io/",
+		"sources": "https://github.com/Pixfri/TemplateMod-Fabric-1.21"
+	},
+	"license": "MIT",
+	"icon": "assets/templatemod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"fr.pixfri.templatemod.TemplateMod"
+		],
+		"client": [
+			"fr.pixfri.templatemod.TemplateModClient"
+		],
+		"fabric-datagen": [
+			"fr.pixfri.templatemod.TemplateModDataGenerator"
+		]
+	},
+	"mixins": [
+		"templatemod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
